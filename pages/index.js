@@ -1,9 +1,12 @@
-import App from './App';
+import App from './_app';
+import TodoList from '../src/TodoList'
+import AddTodo from '../src/AddTodo'
 
 export default function Index() {
   return (
-    <div>
-      <App />
-    </div>
+    <main>
+      <TodoList />
+      <AddTodo />
+    </main>
   );
 }

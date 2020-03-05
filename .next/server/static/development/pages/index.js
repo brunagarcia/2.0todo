@@ -88,144 +88,191 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./pages/AddTodo.js":
-/*!**************************!*\
-  !*** ./pages/AddTodo.js ***!
-  \**************************/
-/*! exports provided: AddTodo, default */
+/***/ "./pages/_app.js":
+/*!***********************!*\
+  !*** ./pages/_app.js ***!
+  \***********************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddTodo", function() { return AddTodo; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/pages/AddTodo.js";
+/* harmony import */ var _src_styles_general__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/styles/general */ "./src/styles/general.js");
+/* harmony import */ var _src_Header__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/Header */ "./src/Header.js");
+var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/pages/_app.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-
-class AddTodo extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  constructor(...args) {
-    super(...args);
-
-    _defineProperty(this, "const", void 0);
-  }
-
-  render() {
-    return __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }, __jsx("form", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }, __jsx("label", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 13
-      },
-      __self: this
-    }, "Name:", __jsx("input", {
-      type: "text",
-      name: "name",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 15
-      },
-      __self: this
-    })), __jsx("label", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 18
-      },
-      __self: this
-    }, "Your currently task is $", ``, __jsx("input", {
-      type: "submit",
-      value: "Submit",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 20
-      },
-      __self: this
-    }))));
-  }
-
-}
-/* harmony default export */ __webpack_exports__["default"] = (AddTodo);
-
-/***/ }),
-
-/***/ "./pages/App.js":
-/*!**********************!*\
-  !*** ./pages/App.js ***!
-  \**********************/
-/*! exports provided: App, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "App", function() { return App; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./pages/Header.js");
-/* harmony import */ var _TodoList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./TodoList */ "./pages/TodoList.js");
-/* harmony import */ var _AddTodo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AddTodo */ "./pages/AddTodo.js");
-var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/pages/App.js";
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
 
 
-class App extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
-  render() {
-    return __jsx("div", {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }, __jsx(_Header__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 10
-      },
-      __self: this
-    }), __jsx(_AddTodo__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 11
-      },
-      __self: this
-    }), __jsx(_TodoList__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 12
-      },
-      __self: this
-    }));
-  }
 
-}
+const App = ({
+  Component,
+  pageProps
+}) => {
+  return __jsx(_src_styles_general__WEBPACK_IMPORTED_MODULE_1__["General"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, __jsx(_src_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }), __jsx(Component, _extends({}, pageProps, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: undefined
+  })));
+};
+
 /* harmony default export */ __webpack_exports__["default"] = (App);
 
 /***/ }),
 
-/***/ "./pages/Header.js":
-/*!*************************!*\
-  !*** ./pages/Header.js ***!
-  \*************************/
+/***/ "./pages/index.js":
+/*!************************!*\
+  !*** ./pages/index.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _app__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./_app */ "./pages/_app.js");
+/* harmony import */ var _src_TodoList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/TodoList */ "./src/TodoList.js");
+/* harmony import */ var _src_AddTodo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/AddTodo */ "./src/AddTodo.js");
+var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/pages/index.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+
+function Index() {
+  return __jsx("main", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, __jsx(_src_TodoList__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), __jsx(_src_AddTodo__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }));
+}
+
+/***/ }),
+
+/***/ "./src/AddTodo.js":
+/*!************************!*\
+  !*** ./src/AddTodo.js ***!
+  \************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/src/AddTodo.js";
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+
+const AddTodo = () => {
+  //Using Hooks
+  const {
+    0: todo,
+    1: setTodo
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("Example");
+
+  const handleInput = e => {
+    setTodo(e.target.value);
+  };
+
+  const handleSubmit = e => {
+    e.preventDefault();
+    console.log(`Todo: ${todo}`);
+  };
+
+  return __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: undefined
+  }, __jsx("form", {
+    onSubmit: handleSubmit,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, __jsx("label", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }, "Add your todo:", __jsx("input", {
+    type: "text",
+    name: "name",
+    onChange: handleInput,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: undefined
+  })), __jsx("input", {
+    type: "submit",
+    value: "Submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: undefined
+  })), __jsx("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: undefined
+  }, "Adding TODO: ", todo));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (AddTodo);
+
+/***/ }),
+
+/***/ "./src/Header.js":
+/*!***********************!*\
+  !*** ./src/Header.js ***!
+  \***********************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -234,12 +281,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Header; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/pages/Header.js";
+var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/src/Header.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
-    return __jsx("div", {
+    return __jsx("header", {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 6
@@ -258,10 +305,10 @@ class Header extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ "./pages/Todo.js":
-/*!***********************!*\
-  !*** ./pages/Todo.js ***!
-  \***********************/
+/***/ "./src/Todo.js":
+/*!*********************!*\
+  !*** ./src/Todo.js ***!
+  \*********************/
 /*! exports provided: Todo, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -270,7 +317,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Todo", function() { return Todo; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/pages/Todo.js";
+var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/src/Todo.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 class Todo extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
@@ -289,10 +336,10 @@ class Todo extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ "./pages/TodoList.js":
-/*!***************************!*\
-  !*** ./pages/TodoList.js ***!
-  \***************************/
+/***/ "./src/TodoList.js":
+/*!*************************!*\
+  !*** ./src/TodoList.js ***!
+  \*************************/
 /*! exports provided: TodoList, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -301,26 +348,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TodoList", function() { return TodoList; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _Todo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Todo */ "./pages/Todo.js");
-var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/pages/TodoList.js";
+/* harmony import */ var _Todo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Todo */ "./src/Todo.js");
+var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/src/TodoList.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 class TodoList extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
   render() {
-    return __jsx("div", {
+    return __jsx(_Todo__WEBPACK_IMPORTED_MODULE_1__["default"], {
       __source: {
         fileName: _jsxFileName,
         lineNumber: 8
       },
       __self: this
-    }, __jsx(_Todo__WEBPACK_IMPORTED_MODULE_1__["default"], {
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 9
-      },
-      __self: this
-    }));
+    });
   }
 
 }
@@ -328,42 +369,32 @@ class TodoList extends react__WEBPACK_IMPORTED_MODULE_0__["Component"] {
 
 /***/ }),
 
-/***/ "./pages/index.js":
-/*!************************!*\
-  !*** ./pages/index.js ***!
-  \************************/
-/*! exports provided: default */
+/***/ "./src/styles/general.js":
+/*!*******************************!*\
+  !*** ./src/styles/general.js ***!
+  \*******************************/
+/*! exports provided: General */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Index; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App */ "./pages/App.js");
-var _jsxFileName = "/Users/bruna/Tutorials/ReduxTutorial/pages/index.js";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "General", function() { return General; });
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @emotion/styled */ "@emotion/styled");
+/* harmony import */ var _emotion_styled__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_emotion_styled__WEBPACK_IMPORTED_MODULE_0__);
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
-
-function Index() {
-  return __jsx("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, __jsx(_App__WEBPACK_IMPORTED_MODULE_1__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }));
-}
+const General = _emotion_styled__WEBPACK_IMPORTED_MODULE_0___default.a.div`
+  height: 100%;
+  background-color: hotpink;
+  color: white;
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 24px;
+  padding: 10px;
+  margin: 5px;
+`;
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/
@@ -372,6 +403,17 @@ function Index() {
 
 module.exports = __webpack_require__(/*! /Users/bruna/Tutorials/ReduxTutorial/pages/index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "@emotion/styled":
+/*!**********************************!*\
+  !*** external "@emotion/styled" ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@emotion/styled");
 
 /***/ }),
 
