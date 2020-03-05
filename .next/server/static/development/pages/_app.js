@@ -200,7 +200,7 @@ const General = _emotion_styled__WEBPACK_IMPORTED_MODULE_0___default.a.div`
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
   padding: 10px;
-  margin: 5px;
+  margin: 0px;
 `;
 
 /***/ }),

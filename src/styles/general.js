@@ -7,5 +7,5 @@ export const General = styled.div`
   font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 24px;
   padding: 10px;
-  margin: 5px;
+  margin: 0px;
 `

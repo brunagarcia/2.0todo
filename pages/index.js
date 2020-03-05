@@ -5,8 +5,8 @@ import AddTodo from '../src/AddTodo'
 export default function Index() {
   return (
     <main>
-      <TodoList />
       <AddTodo />
+      <TodoList />
     </main>
   );
 }

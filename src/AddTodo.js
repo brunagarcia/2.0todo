@@ -29,4 +29,3 @@ const AddTodo = () => {
 }
 
 export default AddTodo
-cd 
